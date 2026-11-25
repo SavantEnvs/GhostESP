@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: lora-pb
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lora-pb/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_lora_pb
+    libfuzzer: true
+    timeout: 5

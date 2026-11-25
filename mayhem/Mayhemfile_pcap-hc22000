@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: pcap-hc22000
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pcap-hc22000/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_pcap_hc22000
+    libfuzzer: true
+    timeout: 5

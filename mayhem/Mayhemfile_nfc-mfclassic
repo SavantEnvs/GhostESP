@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: nfc-mfclassic
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nfc-mfclassic/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_nfc_mfclassic
+    libfuzzer: true
+    timeout: 5

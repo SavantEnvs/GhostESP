@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: nfc-ndef
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nfc-ndef/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_nfc_ndef
+    libfuzzer: true
+    timeout: 5

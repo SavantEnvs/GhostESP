@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: infrared
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/infrared/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_infrared
+    libfuzzer: true
+    timeout: 5

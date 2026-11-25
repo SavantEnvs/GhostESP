@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: pcap-write
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pcap-write/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_pcap_write
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: nfc-flipper-file
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nfc-flipper-file/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_nfc_flipper_file
+    libfuzzer: true
+    timeout: 5

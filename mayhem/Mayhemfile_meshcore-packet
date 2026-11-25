@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: meshcore-packet
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/meshcore-packet/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_meshcore_packet
+    libfuzzer: true
+    timeout: 5

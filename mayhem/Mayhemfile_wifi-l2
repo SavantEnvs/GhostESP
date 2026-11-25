@@ -1,0 +1,9 @@
+project: savantenvs/GhostESP
+target: wifi-l2
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/wifi-l2/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_wifi_l2
+    libfuzzer: true
+    timeout: 5

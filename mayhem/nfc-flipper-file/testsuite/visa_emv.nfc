@@ -1,0 +1,25 @@
+Filetype: Flipper NFC device
+Version: 4
+Device type: EMV
+UID: 01 02 03 04
+ATQA: 00 04
+SAK: 20
+Application name: VISA CREDIT
+Application label: VISA
+AID length: 7
+AID: A0 00 00 00 03 10 10
+PAN length: 8
+PAN: 41 11 11 11 11 11 11 11
+Cardholder name: JOHN DOE
+Expiration year: 30
+Expiration month: 12
+Effective year: 24
+Effective month: 01
+Country code: 08 40
+Currency code: 08 40
+Application interchange profile: 18 00
+Application transaction counter: 12
+Last online ATC: 10
+PIN try counter: 3
+Transaction count: 1
+Transaction 0 Amount: 00 00 00 01 00 00
